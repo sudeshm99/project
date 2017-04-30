@@ -148,7 +148,7 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a  href=\"form.jsp\"><i class=\"fa fa-edit fa-3x\"></i>Analytical</a>\n");
       out.write("                    </li>\n");
       out.write("                     <li  >\n");
-      out.write("                        <a  href=\"sendNews.jsp\"><i class=\"fa fa-edit fa-3x\"></i>sendNews</a>\n");
+      out.write("                        <a  href=\"SendSmsPage\"><i class=\"fa fa-edit fa-3x\"></i>sendNews</a>\n");
       out.write("                    </li>\n");
       out.write("\t\t\t\t\t\n");
       out.write("\t\t\t\t\t                   \n");
@@ -182,12 +182,22 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("  <h3>Send SMS Alert</h3>\n");
       out.write("  <form action=\"NewsHandler\" method=\"post\" >\n");
       out.write("    <div class=\"form-group\">\n");
-      out.write("      <label for=\"email\">Area office:</label>\n");
-      out.write("      <input style=\"width: 156px\" type=\"text\" class=\"form-control\" id=\"area\" name=\"area\" placeholder=\"EnterAres office\">\n");
+      out.write("      <label for=\"area\">Area office:</label>\n");
+      out.write("      <select style=\"width: 156px\" class=\"form-control\" id=\"area_list\">\n");
+      out.write("        <option>Matara</option>\n");
+      out.write("        <option>Colombo</option>\n");
+      out.write("        <option>Kandy</option>\n");
+      out.write("        <option>Kurunagala</option>\n");
+      out.write("      </select>\n");
       out.write("    </div>\n");
       out.write("    <div class=\"form-group\">\n");
-      out.write("      <label for=\"pwd\">Transformer Id</label>\n");
-      out.write("      <input style=\"width: 156px\" type=\"text\" class=\"form-control\" id=\"transeformer\" name=\"transeformer\" placeholder=\"Enter Transformer Id\">\n");
+      out.write("      <label for=\"transformer\">Transformer Id:</label>\n");
+      out.write("      <select style=\"width: 156px\" class=\"form-control\" id=\"transformer_list\">\n");
+      out.write("        <option>1</option>\n");
+      out.write("        <option>2</option>\n");
+      out.write("        <option>3</option>\n");
+      out.write("        <option>4</option>\n");
+      out.write("      </select>\n");
       out.write("    </div>\n");
       out.write("     <div class=\"form-group\"> \n");
       out.write("      <p>\n");
@@ -197,12 +207,16 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          \n");
       out.write("      </textarea>\n");
       out.write("      </div>\n");
-      out.write("      <button style=\"margin-left: 97px\" type=\"submit\" class=\"btn btn-default\">Send</button>\n");
+      out.write("      <button style=\"margin-left: 97px\" type=\"submit\" class=\"btn btn-default\">Send</button>   \n");
       out.write("  </form>\n");
       out.write("</div>\n");
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write(" ");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

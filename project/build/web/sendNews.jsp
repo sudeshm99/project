@@ -21,12 +21,22 @@
   <h3>Send SMS Alert</h3>
   <form action="NewsHandler" method="post" >
     <div class="form-group">
-      <label for="email">Area office:</label>
-      <input style="width: 156px" type="text" class="form-control" id="area" name="area" placeholder="EnterAres office">
+      <label for="area">Area office:</label>
+      <select style="width: 156px" class="form-control" id="area_list">
+        <option>Matara</option>
+        <option>Colombo</option>
+        <option>Kandy</option>
+        <option>Kurunagala</option>
+      </select>
     </div>
     <div class="form-group">
-      <label for="pwd">Transformer Id</label>
-      <input style="width: 156px" type="text" class="form-control" id="transeformer" name="transeformer" placeholder="Enter Transformer Id">
+      <label for="transformer">Transformer Id:</label>
+      <select style="width: 156px" class="form-control" id="transformer_list">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
     </div>
      <div class="form-group"> 
       <p>
@@ -36,9 +46,13 @@
           
       </textarea>
       </div>
-      <button style="margin-left: 97px" type="submit" class="btn btn-default">Send</button>
+      <button style="margin-left: 97px" type="submit" class="btn btn-default">Send</button>   
   </form>
 </div>
 
 </body>
 </html>
+
+
+
+ 
