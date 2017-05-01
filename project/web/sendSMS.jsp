@@ -3,8 +3,9 @@
     Created on : Apr 25, 2017, 3:03:31 AM
     Author     : root
 --%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+   <%@page import="java.util.ArrayList" %>
+   <%@page import="java.io.PrintWriter"%>
+   <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +24,17 @@
     <div class="form-group">
       <label for="area">Area office:</label>
       <select style="width: 156px" class="form-control" id="area_list">
-        <option>Matara</option>
-        <option>Colombo</option>
-        <option>Kandy</option>
-        <option>Kurunagala</option>
+       <%
+            ArrayList list = (ArrayList)request.getAttribute("areaList");
+            for(int i=0; i<list.size(); i++){    
+            
+        %>
+        
+        <option><% out.print(list.get(i));%></option>
+        
+        <%
+            }
+        %>
       </select>
     </div>
     <div class="form-group">

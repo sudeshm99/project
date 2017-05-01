@@ -85,7 +85,7 @@
                         <a  href="form.jsp"><i class="fa fa-edit fa-3x"></i>Analytical</a>
                     </li>
                      <li  >
-                        <a  href="SendSmsPage"><i class="fa fa-edit fa-3x"></i>sendNews</a>
+                        <a  href="SendSmsPage"><i class="fa fa-edit fa-3x"></i>send SMS alert</a>
                     </li>
 					
 					                   
