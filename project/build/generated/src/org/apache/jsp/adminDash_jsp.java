@@ -128,7 +128,7 @@ public final class adminDash_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a  href=\"form.jsp\"><i class=\"fa fa-edit fa-3x\"></i>Analytical</a>\n");
       out.write("                    </li>\n");
       out.write("                     <li  >\n");
-      out.write("                        <a  href=\"sendNews.jsp\"><i class=\"fa fa-edit fa-3x\"></i>sendNews</a>\n");
+      out.write("                        <a  href=\"SendSmsPage\"><i class=\"fa fa-edit fa-3x\"></i>sendNews</a>\n");
       out.write("                    </li>\n");
       out.write("\t\t\t\t\t\n");
       out.write("\t\t\t\t\t                   \n");

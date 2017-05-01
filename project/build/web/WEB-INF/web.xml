@@ -21,8 +21,8 @@
         <servlet-class>com.dmr.project.controller.NewsHandler</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>SendNewsPage</servlet-name>
-        <servlet-class>com.dmr.project.controller.SendNewsPage</servlet-class>
+        <servlet-name>SendSmsPage</servlet-name>
+        <servlet-class>com.dmr.project.controller.SendSmsPage</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
@@ -45,8 +45,8 @@
         <url-pattern>/NewsHandler</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>SendNewsPage</servlet-name>
-        <url-pattern>/SendNewsPage</url-pattern>
+        <servlet-name>SendSmsPage</servlet-name>
+        <url-pattern>/SendSmsPage</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
