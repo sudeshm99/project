@@ -3,6 +3,8 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.util.ArrayList;;
+import java.io.PrintWriter;;
 
 public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -47,8 +49,9 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\n");
-      out.write("\n");
-      out.write("\n");
+      out.write("   \n");
+      out.write("   \n");
+      out.write("   \n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"en\">\n");
       out.write("<head>\n");
@@ -148,7 +151,7 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        <a  href=\"form.jsp\"><i class=\"fa fa-edit fa-3x\"></i>Analytical</a>\n");
       out.write("                    </li>\n");
       out.write("                     <li  >\n");
-      out.write("                        <a  href=\"SendSmsPage\"><i class=\"fa fa-edit fa-3x\"></i>sendNews</a>\n");
+      out.write("                        <a  href=\"SendSmsPage\"><i class=\"fa fa-edit fa-3x\"></i>send SMS alert</a>\n");
       out.write("                    </li>\n");
       out.write("\t\t\t\t\t\n");
       out.write("\t\t\t\t\t                   \n");
@@ -184,7 +187,9 @@ public final class sendNews_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <div class=\"form-group\">\n");
       out.write("      <label for=\"area\">Area office:</label>\n");
       out.write("      <select style=\"width: 156px\" class=\"form-control\" id=\"area_list\">\n");
-      out.write("        <option>Matara</option>\n");
+      out.write("       \n");
+      out.write("      \n");
+      out.write("          <option>Matara</option>\n");
       out.write("        <option>Colombo</option>\n");
       out.write("        <option>Kandy</option>\n");
       out.write("        <option>Kurunagala</option>\n");
