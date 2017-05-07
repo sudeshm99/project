@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="public/js/jquery-3.2.1.min.js"> </script>
+  <script src="public/js/getTransformers.js"></script>
 </head>
 <body>
     <%@include file="adminDash.jsp" %>
@@ -36,14 +38,12 @@
             }
         %>
       </select>
+      <input type="button" name="transformer" id="transformer" value="transformer">
     </div>
     <div class="form-group">
       <label for="transformer">Transformer Id:</label>
       <select style="width: 156px" class="form-control" id="transformer_list">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
+     
       </select>
     </div>
      <div class="form-group"> 
@@ -56,6 +56,11 @@
       </div>
       <button style="margin-left: 97px" type="submit" class="btn btn-default">Send</button>   
   </form>
+      
+      <div id="show"></div>
+          
+         
+      
 </div>
 
 </body>

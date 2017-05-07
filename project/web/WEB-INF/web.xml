@@ -24,6 +24,10 @@
         <servlet-name>SendSmsPage</servlet-name>
         <servlet-class>com.dmr.project.controller.SendSmsPage</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>TransformerHandler</servlet-name>
+        <servlet-class>com.dmr.project.controller.TransformerHandler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginHandler</servlet-name>
         <url-pattern>/LoginHandler</url-pattern>
@@ -47,6 +51,10 @@
     <servlet-mapping>
         <servlet-name>SendSmsPage</servlet-name>
         <url-pattern>/SendSmsPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransformerHandler</servlet-name>
+        <url-pattern>/TransformerHandler</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
